@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Text editor</title>
+
+    <!--    <link th:href="@{css/boostrap5.min.css}" rel="stylesheet"/>-->
+    <link th:href="@{css/style.css}" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="fileMenu">
+    <div class="contextMenu">
+        <button>Info</button>
+        <button>Create new</button>
+        <button class="menuFileSaveButton">Save</button>
+        <button>Save as</button>
+    </div>
+
+    <div class="contextMenuList"></div>
+</div>
+
+<div class="topSide">
+    <button class="fileButton">File</button>
+    <button class="mainButton">Main</button>
+    <button class="insertButton">Insert</button>
+    <button class="constructorButton">Constructor</button>
+    <button class="layoutButton">Layout</button>
+    <button class="linksButton">Links</button>
+    <button class="viewButton">View</button>
+    <button class="referenceButton">Reference</button>
+</div>
+
+<div class="mainSide">
+    <label for="content">
+        <textarea id="content"></textarea>
+    </label>
+</div>
+
+<script th:src="@{/js/libs/jquery-3.6.0.js}"></script>
+<script th:src="@{/js/menu/menuFile.js}"></script>
+
+</body>
+</html>
